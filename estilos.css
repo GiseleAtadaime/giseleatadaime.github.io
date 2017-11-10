@@ -36,7 +36,7 @@
 .parallax1{
 	width: 100%;
 	height: 150px;
-	background-image: url("Assets/IMG_20160517_155800093.jpg");
+	background-image: url("Assets/IMG_20160517_155800093-min.jpg");
 	background-size: cover;
 	background-position: center;
 
@@ -44,7 +44,7 @@
 .parallax2{
 	width: 100%;
 	height: 150px;
-	background-image: url("Assets/IMG_20160715_140412126.jpg");
+	background-image: url("Assets/IMG_20160715_140412126-min.jpg");
 	background-size: cover;
 	background-position: center;
 
@@ -53,7 +53,7 @@
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
-	background-image: url("Assets/Eu.jpg");
+	background-image: url("Assets/Eu-min.jpg");
 	background-size: cover;
 	background-position: center;
 	margin: 20px auto 0 auto;
