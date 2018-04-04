@@ -7,62 +7,165 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel = "stylesheet" href="estilos.css">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Courgette|Josefin+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href="media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<div class="container">
-				<h1>Gisele Atadaime</h1>
-				<h2>"Ação é a chave fundamental para todo sucesso"</h2>
-				<p>Pablo Picasso</p>
-			</div>
+		<header class="header">
+			<div class="header__logo"><p class="header--logo">Gisele</p></div>
+			<input class="header--botao" type="checkbox" id="botao">
+			<label class="header--botao--label" for="botao"></label>
+			<nav class="header__menu">
+				<ul class="header__menu__container">
+					<li class="header__menu__container--item"><a  onclick="smoothScroll('#hero')">Home</a></li>
+					<li class="header__menu__container--item"><a  onclick="smoothScroll('#sobre')">Sobre mim</a></li>
+					<li class="header__menu__container--item"><a onclick="smoothScroll('#projetos')">Projetos</a></li>
+					<li class="header__menu__container--item"><a  onclick="smoothScroll('#contato')">Contato</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			<section class="parallax1"></section>
-			<section class="conteudo">
-				<section class="box perfil">
-					<div class="foto"></div>
-					<article class="sb-eu">
-						<hr>
-						<h2>Sobre mim:</h2>
-						<hr>
-						<p>Estudante na Fatec Sorocaba do curso de Análise e Desenvolvimento de Sistemas.
-							<br>Sou aspirante a desenvolvedora web fullstack e futura especialista de UX, estudando e praticando sempre que possível.
-							<br>Ilustradora nas horas vagas. 
-					</article>
-				</section>
-				<section class="box descricao">
-					<article class="sb-site">
-						<hr>
-						<h2>Sobre o site:</h2>
-						<hr>
-						<p>Este site é fruto do estudo a partir das apostilas de desenvolvimento web distribuídas
-							gratuitamente pela Caelum; do curso "HTML, CSS and Javascript for web developers" da 
-							universidade Johns Hopkins que está disponível na modalidade ouvinte (gratuito), 
-							na plataforma Coursera e do curso "Responsive web design fundamentals" da Udacity.
-						<br>Este é o meu primeiro site a ser publicado, ele foi criado do zero e reflete os meus primeiros passos rumo ao desenvolvimento web real.</p>
-						</p>
-						<hr>
-					</article>
-				</section>	
-				<section class="box social">
-					<h2>Para saber mais:</h2>
-					<ul class="social-links">
-						<li><a  href="https://www.instagram.com/gisele_tamie/"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/gisele-atadaime-409a9613b"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://codepen.io/Gitamie/"><i class="fa fa-codepen"></i></a></li>
-						<li><a href="https://github.com/GiseleAtadaime"><i class="fa fa-github"S></i></a></li>
-					</ul>
-					<a class="download" download="Curriculo Gisele Atadaime" href="#"></a>
-				</section>
+			<section class="hero" id="hero">
+				<div class="hero__container">
+					<h1>Olá, meu nome é Gisele Atadaime</h1>
+					<h2>Bem Vindo!</h2>
+					<a href="#" class="hero--hire" onclick="smoothScroll('#contato')">HIRE</a>
+					<a href="Assets/04-2018.pdf" class="hero--cv">Meu CV</a>
+				</div>
 			</section>
-			<section class="parallax2"></section>
+			<section class="conteudo__perfil" id="sobre">
+				<article class="conteudo__perfil__sb-eu">
+					<h2>Sobre mim</h2>
+					<p>Estudante na Fatec Sorocaba do curso de Análise e Desenvolvimento de Sistemas.
+						<br>Sou aspirante a desenvolvedora web fullstack, estudando e praticando sempre que possível.
+						<br>Ilustradora nas horas vagas. 
+				</article>
+				<article class="experiencias">
+					<div class="experiencias__wrap">
+						<article class="experiencias__wrap--1">
+							<h1>Escolaridade</h1>
+							<h2>FATEC-Sorocaba</h2>
+							<h3>Análise e Desenvolvimento de Sistemas</h3>
+							<p>Fevereiro 2016 - Dezembro 2019</p>
+							<h3>CSS::anything</h3>
+							<p>Mini curso ministrado pela Fatec-Sorocaba com duração de 14hrs</p>
+						</article>
+						<article class="experiencias__wrap--2">
+							<h1>Speaker</h1>
+							<h2>Codepen Meetup Brasil 2017</h2>
+							<p>Apresentação de desenho em CSS puro</p>
+							<a href="#">Ver no codepen</a>
+						</article>
+					</div>
+				</article>
+			</section>
+			
+			<section class="habilidades">
+				<ul class="habilidades__linguagens">
+					<h1>Habilidades</h1>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">Java</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-80">
+								<!-- <p>80%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">C</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-90">
+								<!-- <p>90%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">VB.NET</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-60">
+								<!-- <p>60%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">HTML5</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-100">
+								<!-- <p>100%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">CSS3</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-80">
+								<!-- <p>80%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">Javascript</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-70">
+								<!-- <p>70%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">PHP</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-60">
+								<!-- <p>40%</p> -->
+							</div>
+						</div>
+					</li>
+					<li class="habilidades__linguagens__item">
+						<h3 class="habilidades__linguagens__item--nome">Python</h3>
+						<div class="barra">
+							<div class="barra--progresso barra--progresso-40">
+								<!-- <p>40%</p> -->
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="conteudo__projetos" id="projetos">
+					<h2>Projetos</h2>
+					<ul class="conteudo__projetos__todos">
+						<li><p data-height="500" data-theme-id="dark" data-slug-hash="WZVJwX" data-default-tab="result" data-user="Gitamie" data-embed-version="2" data-pen-title="Catmelo" class="codepen">See the Pen <a href="https://codepen.io/Gitamie/pen/WZVJwX/">Catmelo</a> by Gisele Atadaime (<a href="https://codepen.io/Gitamie">@Gitamie</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script></li>
+						<li><p data-height="500" data-theme-id="dark" data-slug-hash="weXJRa" data-default-tab="result" data-user="Gitamie" data-embed-version="2" data-pen-title="Azulinho :D" class="codepen">See the Pen <a href="https://codepen.io/Gitamie/pen/weXJRa/">Azulinho :D</a> by Gisele Atadaime (<a href="https://codepen.io/Gitamie">@Gitamie</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script></li>
+						<li><p data-height="500" data-theme-id="dark" data-slug-hash="KqRyEw" data-default-tab="result" data-user="Gitamie" data-embed-version="2" data-pen-title="Rosquinha" class="codepen">See the Pen <a href="https://codepen.io/Gitamie/pen/KqRyEw/">Rosquinha</a> by Gisele Atadaime (<a href="https://codepen.io/Gitamie">@Gitamie</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script></li>
+					</ul>
+			</section>
+			<section class="conteudo__social" id="contato">
+				<h2>Para saber mais:</h2>
+				<ul class="conteudo__social__links">
+					<li><a  href="https://www.instagram.com/gisele_tamie/"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/gisele-atadaime-409a9613b"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://codepen.io/Gitamie/"><i class="fa fa-codepen"></i></a></li>
+					<li><a href="https://github.com/GiseleAtadaime"><i class="fa fa-github"S></i></a></li>
+				</ul>
+				<form class="conteudo__social__email" action="https://formspree.io/giseletamie@hotmail.com" method="POST">
+    				<div class="conteudo__social__email__nome">
+    					<label>E-mail</label>
+    					<input type="text" name="name">
+    				</div>
+    				<input type="hidden" name="_subject" value="E-mail enviado do Site" />
+    				<div class="conteudo__social__email__texto">
+    					<label>Mensagem</label>
+    					<textarea type="email" name="_replyto"></textarea>
+    				</div>
+    				<input class="conteudo__social__email__botao" type="submit" value="Enviar">
+				</form>
+			</section>
 			<footer class="footer">
 				<p>Gisele Atadaime:2017</p>
 			</footer>
 		</main>
-		<script type="text/javascript" src="parallax.js"></script>
 	</body>
+	<script type="text/javascript" src="main.js"></script>
 </html>
